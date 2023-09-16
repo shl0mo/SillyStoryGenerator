@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Silly story generator</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      body {
+        font-family: helvetica, sans-serif;
+        width: 400px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      div {
+        padding-bottom: 20px;
+      }
+
+      input[type="text"] {
+        padding: 5px;
+        width: 150px;
+      }
+
+      p {
+        background: #ffc125;
+        color: #5e2612;
+        padding: 10px;
+	visibility: hidden;
+      }
+      
+      .spinner-container {
+        text-align: center;
+	display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <label for="customname-1">Nome do personagem 1:</label>
+      <input id="customname-1" type="text" placeholder="" /><br>
+      <label for="customname-2">Nome do personagem 2:</label>
+      <input id="customname-2" type="text" placeholder="" /><br>
+    </div>
+    <div>
+      <label for="br">BR</label><input id="br" type="radio" name="ukus" value="br" checked />
+      <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" />
+    </div>
+    <div>
+      <button class="randomize">Gerar história aleatória</button>
+    </div>
+    <div class="spinner-container">
+        <div class="spinner-border">
+ 	</div>
+    </div>
+    <p class="story"></p>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
